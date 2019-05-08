@@ -1,11 +1,11 @@
 {
   "name": "test-repo",
-  "version": "4.0.5",
+  "version": "4.0.10",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "standard-version && ./release.sh"
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -19,11 +19,5 @@
   "homepage": "https://github.com/levy9527/test-repo#readme",
   "devDependencies": {
     "standard-version": "^6.0.1"
-  },
-  "standard-version": {
-    "skip": {
-      "changelog": true,
-      "commit": true
-    }
   }
 }
