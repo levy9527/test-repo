@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "standard-version"
+    "release": "standard-version && ./release.sh"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,6 @@
     "skip": {
       "changelog": true,
       "commit": true
-    },
-    "scripts": {
-      "posttag": "sed -n 3p package.json | cut -d\" -f 4 | git commit -m"
     }
   }
 }
