@@ -1,6 +1,6 @@
 {
   "name": "test-repo",
-  "version": "3.0.0",
+  "version": "4.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,14 @@
   "homepage": "https://github.com/levy9527/test-repo#readme",
   "devDependencies": {
     "standard-version": "^6.0.1"
+  },
+  "standard-version": {
+    "skip": {
+      "changelog": true,
+      "commit": true
+    },
+    "scripts": {
+      "posttag": "git commit -m 'chore(release): `sed -n 3p package.json | cut -d\" -f 4`'"
+    }
   }
 }
