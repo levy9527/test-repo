@@ -1,6 +1,6 @@
 {
   "name": "test-repo",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
       "commit": true
     },
     "scripts": {
-      "posttag": "git commit -m 'chore(release): `sed -n 3p package.json | cut -d\" -f 4`'"
+      "posttag": "sed -n 3p package.json | cut -d\" -f 4 | git commit -m"
     }
   }
 }
