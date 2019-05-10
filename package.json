@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "echo 0",
-    "stdver": "standard-version",
+    "stdver": "standard-version -m '[skip ci] chore(release): v%s'",
     "release": "gren release --override"
   },
   "repository": {
