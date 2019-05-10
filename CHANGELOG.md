@@ -2,6 +2,68 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.0.13](https://github.com/levy9527/test-repo/compare/v5.0.12...v5.0.13) (2019-05-10)
+
+
+### Features
+
+* build generate changelog  ([7571a53](https://github.com/levy9527/test-repo/commit/7571a53))
+
+
+
+### [5.0.12](https://github.com/levy9527/test-repo/compare/v5.0.11...v5.0.12) (2019-05-10)
+
+
+
+### [5.0.11](https://github.com/levy9527/test-repo/compare/v5.0.10...v5.0.11) (2019-05-10)
+
+
+
+### [5.0.10](https://github.com/levy9527/test-repo/compare/v5.0.9...v5.0.10) (2019-05-10)
+
+
+
+### [5.0.9](https://github.com/levy9527/test-repo/compare/v5.0.8...v5.0.9) (2019-05-10)
+
+
+
+### [5.0.8](https://github.com/levy9527/test-repo/compare/v5.0.7...v5.0.8) (2019-05-10)
+
+
+
+### [5.0.7](https://github.com/levy9527/test-repo/compare/v5.0.6...v5.0.7) (2019-05-10)
+
+
+
+### [5.0.6](https://github.com/levy9527/test-repo/compare/v5.0.5...v5.0.6) (2019-05-10)
+
+
+
+### [5.0.5](https://github.com/levy9527/test-repo/compare/v5.0.4...v5.0.5) (2019-05-10)
+
+
+
+### [5.0.4](https://github.com/levy9527/test-repo/compare/v5.0.3...v5.0.4) (2019-05-10)
+
+
+
+### [5.0.3](https://github.com/levy9527/test-repo/compare/v5.0.2...v5.0.3) (2019-05-10)
+
+
+
+### [5.0.2](https://github.com/levy9527/test-repo/compare/v5.0.1...v5.0.2) (2019-05-10)
+
+
+
+### 5.0.1 (2019-05-10)
+
+
+### Bug Fixes
+
+* ./build.sh ([e6700f8](https://github.com/levy9527/test-repo/commit/e6700f8))
+
+
+
 ## 5.0.0 (2019-05-08)
 
 
