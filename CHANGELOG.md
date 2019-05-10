@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 5.1.0 (2019-05-10)
+
+
+### Features
+
+* grenrc ([118c716](https://github.com/levy9527/test-repo/commit/118c716))
+* skip ci ([4bb0e05](https://github.com/levy9527/test-repo/commit/4bb0e05))
+
+
+
 ### [5.0.13](https://github.com/levy9527/test-repo/compare/v5.0.12...v5.0.13) (2019-05-10)
 
 
