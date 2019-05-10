@@ -1,0 +1,24 @@
+branches:
+  only:
+    - master
+language: node_js
+node_js:
+- lts/*
+git:
+  depth: 3
+install:
+- yarn --frozen-lockfile
+before_script:
+- yarn version
+script:
+- yarn build
+cache: yarn
+deploy:
+- provider: pages
+  local-dir: docs
+  github-token: $GITHUB_TOKEN
+  skip-cleanup: true
+  keep-history: true
+after_script:
+- git push --follow-tags
+- GREN_GITHUB_TOKEN=$GITHUB_TOKEN yarn release
