@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.0.13](https://github.com/levy9527/test-repo/compare/v5.0.12...v5.0.13) (2019-05-10)
+
+
+### Features
+
+* build generate changelog  ([7571a53](https://github.com/levy9527/test-repo/commit/7571a53))
+
+
+
 ### [5.0.12](https://github.com/levy9527/test-repo/compare/v5.0.11...v5.0.12) (2019-05-10)
 
 
