@@ -11,7 +11,7 @@ install:
 before_script:
 - yarn stdver
 script:
-- build.sh
+- ./build.sh
 after_success:
 - GREN_GITHUB_TOKEN=$GITHUB_TOKEN yarn release
 cache: yarn
