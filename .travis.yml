@@ -12,6 +12,9 @@ before_script:
 - yarn stdver
 script:
 - yarn build
+- git push origin HEAD:dev
+- git push origin HEAD:master --follow-tags
+- GREN_GITHUB_TOKEN=$GITHUB_TOKEN yarn release
 cache: yarn
 deploy:
 - provider: pages
@@ -19,6 +22,3 @@ deploy:
   github-token: $GITHUB_TOKEN
   skip-cleanup: true
   keep-history: true
-after_script:
-- git push --follow-tags
-- GREN_GITHUB_TOKEN=$GITHUB_TOKEN yarn release
