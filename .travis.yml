@@ -9,7 +9,7 @@ git:
 install:
 - yarn --frozen-lockfile
 before_script:
-- yarn version
+- yarn stdver
 script:
 - yarn build
 cache: yarn
