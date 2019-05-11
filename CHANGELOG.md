@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 5.1.3 (2019-05-11)
+
+
+### Bug Fixes
+
+* build error ([ea14230](https://github.com/FEMessage/test-repo/commit/ea14230))
+* yarn ([8d3fcd4](https://github.com/FEMessage/test-repo/commit/8d3fcd4))
+
+
+### Tests
+
+* for test ([3bb8c80](https://github.com/FEMessage/test-repo/commit/3bb8c80))
+
+
+
 ### [5.1.2](https://github.com/levy9527/test-repo/compare/v5.1.1...v5.1.2) (2019-05-11)
 
 
