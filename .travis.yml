@@ -8,8 +8,6 @@ git:
   depth: 3
 install:
 - yarn --frozen-lockfile
-before_script:
-- yarn stdver
 script:
 - ./build.sh
 after_success:
