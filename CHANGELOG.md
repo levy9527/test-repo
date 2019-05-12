@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.2.0](https://github.com/FEMessage/test-repo/compare/v5.1.3...v5.2.0) (2019-05-12)
+
+
+### Features
+
+* notify ([791aa1d](https://github.com/FEMessage/test-repo/commit/791aa1d))
+
+
+
 ### 5.1.3 (2019-05-11)
 
 
