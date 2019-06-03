@@ -8,8 +8,8 @@ fi
 echo success
 
 url=https://api.github.com/repos/levy9527/test-repo/releases/latest
-html_url=`curl $url | sed -n 5p | sed 's/\"html_url\"://g' | awk -F '"' '{print $2}'`
-body=`curl $url | grep body | sed 's/\"body\"://g;s/\"//g'`
+html_url=`curl -H "Authorization: token $GITHUB_TOKEN" $url | sed -n 5p | sed 's/\"html_url\"://g' | awk -F '"' '{print $2}'`
+body=`curl -H "Authorization: token $GITHUB_TOKEN" $url | grep body | sed 's/\"body\"://g;s/\"//g'`
 
 msg='{"msgtype": "markdown", "markdown": {"title": "新版本发布", "text": "@所有人\n# ['$html_url']('$html_url')'$body'"}}'
 
