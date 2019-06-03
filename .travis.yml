@@ -9,6 +9,7 @@ git:
 install:
 - yarn 
 script:
+- yarn lock
 - ./build.sh
 after_script:
 - ./notify.sh
