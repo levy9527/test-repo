@@ -10,6 +10,6 @@ install:
 - yarn 
 script:
 - ./build.sh
-after_success:
+after_script:
 - ./notify.sh
 cache: yarn

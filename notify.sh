@@ -1,4 +1,11 @@
 #!/bin/sh
+if ["$TRAVIS_TEST_RESULT" != 0]
+then
+  echo bye
+  exit 1
+fi
+echo success
+
 url=https://api.github.com/repos/levy9527/test-repo/releases/latest
 html_url=`curl $url | sed -n 5p | sed 's/\"html_url\"://g' | awk -F '"' '{print $2}'`
 body=`curl $url | grep body | sed 's/\"body\"://g;s/\"//g'`
