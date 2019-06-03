@@ -1,5 +1,6 @@
 #!/bin/sh
-if ["$TRAVIS_TEST_RESULT" != "0"]
+echo "TRAVIS_TEST_RESULT: $TRAVIS_TEST_RESULT"
+if [ "$TRAVIS_TEST_RESULT" != "0" ]
 then
   echo bye
   exit 1
