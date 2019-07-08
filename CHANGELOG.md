@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.2.9](https://github.com/FEMessage/test-repo/compare/v5.2.8...v5.2.9) (2019-07-08)
+
+
+
 ### 5.2.8 (2019-07-03)
 
 
