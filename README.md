@@ -1,6 +1,6 @@
 # test-repo
 
-this is a repo for test reason
+this is a repo for test reason.
 
 ## Contributors
 
