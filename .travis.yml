@@ -11,5 +11,5 @@ install:
 script:
 - ./build.sh
 after_script:
-- ./notify.sh
+# - ./notify.sh
 cache: yarn
