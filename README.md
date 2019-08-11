@@ -1,6 +1,6 @@
 # test-repo
 
-this is a repo for test reason
+:video_game: A repo for testing or experiment
 
 ## Contributors
 
