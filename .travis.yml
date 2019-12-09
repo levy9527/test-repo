@@ -9,7 +9,7 @@ git:
 install:
 - npm install -g @lhci/cli 
 script:
-- lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=./
+- lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=./static
 addons:
   chrome: stable
 #- ./build.sh
