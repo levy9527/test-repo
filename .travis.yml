@@ -7,9 +7,12 @@ node_js:
 git:
   depth: 3
 install:
-- yarn 
+- npm install -g @lhci/cli 
 script:
-- ./build.sh
+- lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=./
+addons:
+  chrome: stable
+#- ./build.sh
 after_success:
-- ./notify.sh
+#- ./notify.sh
 cache: yarn
