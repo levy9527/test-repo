@@ -11,7 +11,7 @@ before_install:
 install:
 - yarn global add @lhci/cli
 script:
-- lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=./ --url=http://localhost/static
+- lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=./ --collect.url=http://localhost/static
 addons:
   chrome: stable
 cache: yarn
