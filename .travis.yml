@@ -6,13 +6,13 @@ node_js:
 - lts/*
 git:
   depth: 3
+before_install:
+- yarn global add @lhci/cli
 install:
-- npm install -g @lhci/cli 
+- yarn
+- yarn build
 script:
 - lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=./static
 addons:
   chrome: stable
-#- ./build.sh
-after_success:
-#- ./notify.sh
 cache: yarn
