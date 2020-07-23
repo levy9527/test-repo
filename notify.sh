@@ -5,11 +5,8 @@ then
   exit 1
 fi
 
-echo $TRAVIS_REPO_SLUG
-
-ORG_NAME=$(cut -d '/' -f 1 < echo "$TRAVIS_REPO_SLUG")
-
-REPO_NAME=$(cut -d '/' -f 2 < echo "$TRAVIS_REPO_SLUG")
+ORG_NAME=$(echo "$TRAVIS_REPO_SLUG" | cut -d '/' -f 1)
+REPO_NAME=$(echo "$TRAVIS_REPO_SLUG" | cut -d '/' -f 2)
 
 git remote add github https://$GITHUB_TOKEN@github.com/$TRAVIS_REPO_SLUG.git > /dev/null 2>&1
 git push github HEAD:master --follow-tags
