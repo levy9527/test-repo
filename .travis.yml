@@ -5,13 +5,22 @@ language: node_js
 node_js:
 - lts/*
 git:
-  depth: 3
-before_install:
-- yarn global add @lhci/cli
+  depth: 30
 install:
-- yarn global add @lhci/cli
+- yarn --frozen-lockfile
+- yarn test
 script:
-- lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=./ --collect.url=http://localhost/static
-addons:
-  chrome: stable
+- ./build.sh
+after_script:
+- ./notify.sh
 cache: yarn
+deploy:
+- provider: pages
+  local-dir: docs
+  github-token: $GITHUB_TOKEN
+  skip-cleanup: true
+  keep-history: true
+- provider: npm
+  email: levy9527@qq.com
+  api_key: $NPM_TOKEN
+  skip-cleanup: true

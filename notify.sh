@@ -1,17 +1,32 @@
 #!/bin/sh
-echo "TRAVIS_TEST_RESULT: $TRAVIS_TEST_RESULT"
 if [ "$TRAVIS_TEST_RESULT" != "0" ]
 then
-  echo bye
+  echo "build not success, bye"
   exit 1
 fi
-echo success
 
-url=https://api.github.com/repos/levy9527/test-repo/releases/latest
-html_url=`curl -H "Authorization: token $GITHUB_TOKEN" $url | sed -n 5p | sed 's/\"html_url\"://g' | awk -F '"' '{print $2}'`
-body=`curl -H "Authorization: token $GITHUB_TOKEN" $url | grep body | sed 's/\"body\"://g;s/\"//g'`
+echo $TRAVIS_REPO_SLUG
 
-msg='{"msgtype": "markdown", "markdown": {"title": "新版本发布", "text": "@所有人\n# ['$html_url']('$html_url')'$body'"}}'
+ORG_NAME=$(cut -d '/' -f 1 < echo "$TRAVIS_REPO_SLUG")
+
+REPO_NAME=$(cut -d '/' -f 2 < echo "$TRAVIS_REPO_SLUG")
+
+git remote add github https://$GITHUB_TOKEN@github.com/$TRAVIS_REPO_SLUG.git > /dev/null 2>&1
+git push github HEAD:master --follow-tags
+
+GREN_GITHUB_TOKEN=$GITHUB_TOKEN yarn release
+
+url=https://api.github.com/repos/$TRAVIS_REPO_SLUG/releases/latest
+resp_tmp_file=resp.tmp
+
+curl -H "Authorization: token $GITHUB_TOKEN" $url > $resp_tmp_file
+
+html_url=$(sed -n 5p $resp_tmp_file | sed 's/\"html_url\"://g' | awk -F '"' '{print $2}')
+body=$(grep body < $resp_tmp_file | sed 's/\"body\"://g;s/\"//g')
+version=$(echo $html_url | awk -F '/' '{print $NF}')
+
+msg='{"msgtype": "markdown", "markdown": {"title": "$REPO_NAME更新", "text": "@所有人\n# [$REPO_NAME('$version')]('$html_url')\n'$body'"}}'
 
 curl -X POST https://oapi.dingtalk.com/robot/send\?access_token\=$DINGTALK_ROBOT_TOKEN -H 'Content-Type: application/json' -d "$msg"
 
+rm $resp_tmp_file
