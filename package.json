@@ -1,6 +1,6 @@
 {
   "name": "test-repo",
-  "version": "5.2.11",
+  "version": "5.3.0",
   "description": "",
   "author": "https://github.com/FEMessage",
   "license": "MIT",
@@ -8,8 +8,16 @@
     "type": "git",
     "url": "https://github.com/FEMessage/test-repo.git"
   },
-  "keywords": ["vue", "sfc", "component"],
-  "files": ["src", "dist", "yarn.lock"],
+  "keywords": [
+    "vue",
+    "sfc",
+    "component"
+  ],
+  "files": [
+    "src",
+    "dist",
+    "yarn.lock"
+  ],
   "main": "dist/test-repo.umd.js",
   "module": "dist/test-repo.esm.js",
   "unpkg": "dist/test-repo.min.js",
@@ -20,12 +28,9 @@
     "dev": "vue-styleguidist server",
     "doc": "vue-styleguidist build",
     "build": "echo build",
-    "build:umd":
-      "rollup --config build/rollup.config.js --format umd --file dist/test-repo.umd.js",
-    "build:es":
-      "rollup --config build/rollup.config.js --format es --file dist/test-repo.esm.js",
-    "build:unpkg":
-      "rollup --config build/rollup.config.js --format iife --file dist/test-repo.min.js",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/test-repo.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/test-repo.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/test-repo.min.js",
     "precommit": "pretty-quick --staged",
     "stdver": "standard-version -m '[skip ci] chore(release): v%s'",
     "release": "gren release --override"

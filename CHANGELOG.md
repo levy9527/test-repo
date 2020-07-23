@@ -2,6 +2,62 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.3.0](https://github.com/FEMessage/test-repo/compare/v5.2.11...v5.3.0) (2020-07-23)
+
+
+### Bug Fixes
+
+* collect.url ([c29b2b2](https://github.com/FEMessage/test-repo/commit/c29b2b2))
+* staticDir ([6220001](https://github.com/FEMessage/test-repo/commit/6220001))
+
+
+### Features
+
+* add meta=viewport ([40d204a](https://github.com/FEMessage/test-repo/commit/40d204a))
+* add meta=viewport ([#21](https://github.com/FEMessage/test-repo/issues/21)) ([db185bf](https://github.com/FEMessage/test-repo/commit/db185bf))
+
+
+
+### [5.2.3](https://github.com/FEMessage/test-repo/compare/v5.2.2...v5.2.3) (2019-05-18)
+
+
+
+### [5.2.2](https://github.com/FEMessage/test-repo/compare/v5.2.1...v5.2.2) (2019-05-18)
+
+
+
+### [5.2.1](https://github.com/FEMessage/test-repo/compare/v5.2.0...v5.2.1) (2019-05-15)
+
+
+
+## [5.2.0](https://github.com/FEMessage/test-repo/compare/v5.1.3...v5.2.0) (2019-05-12)
+
+
+### Features
+
+* notify ([791aa1d](https://github.com/FEMessage/test-repo/commit/791aa1d))
+
+
+
+### [5.1.3](https://github.com/FEMessage/test-repo/compare/v5.1.2...v5.1.3) (2019-05-11)
+
+
+### Bug Fixes
+
+* build error ([ea14230](https://github.com/FEMessage/test-repo/commit/ea14230))
+* yarn ([8d3fcd4](https://github.com/FEMessage/test-repo/commit/8d3fcd4))
+
+
+### Tests
+
+* for test ([3bb8c80](https://github.com/FEMessage/test-repo/commit/3bb8c80))
+
+
+
+### 5.1.2 (2019-05-11)
+
+
+
 ### [5.2.11](https://github.com/FEMessage/test-repo/compare/v5.2.10...v5.2.11) (2019-08-11)
 
 
