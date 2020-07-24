@@ -10,6 +10,6 @@ install:
 - yarn --frozen-lockfile
 script:
 - ./build.sh
-after_script:
-- ./notify.sh
+# after_script:
+# - ./notify.sh
 cache: yarn
